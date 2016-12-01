@@ -29,8 +29,8 @@ namespace PracticeDemoWithAngular.Controllers
             return customer;
         }
 
-        //insert customer
-        public HttpResponseMessage Post(Customer customer)
+        [HttpPost]
+        public HttpResponseMessage Post123(Customer customer)
         {
             if (ModelState.IsValid)
             {
@@ -45,6 +45,23 @@ namespace PracticeDemoWithAngular.Controllers
                 return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
             }
         }
+
+        //insert customer
+        //public HttpResponseMessage Post(Customer customer)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        //   db.Customers.Add(customer);
+        //        //  db.SaveChanges();
+        //        HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.Created, customer);
+        //        response.Headers.Location = new Uri(Url.Link("DefaultApi", new { id = customer.Id }));
+        //        return response;
+        //    }
+        //    else
+        //    {
+        //        return Request.CreateErrorResponse(HttpStatusCode.BadRequest, ModelState);
+        //    }
+        //}
 
         //update customer
         public HttpResponseMessage Put(int id, Customer customer)

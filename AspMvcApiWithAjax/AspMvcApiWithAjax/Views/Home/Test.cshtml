@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Test";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Test</h2>
+
+<div>
+
+    <input type="button" id="SampleBtn"  value="Click"/>
+
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+    
+    <script>   
+    $(document).ready(function (){
+
+            $("#SampleBtn").click(
+                function ()
+                {                   
+                    $.getJSON("http://localhost:49781/api/Values/", null, function (data, textStatus, xhr) {
+                        
+                        alert('successful');
+
+                    });
+
+                    alert('Failed');
+
+                });
+        });
+</script>
+</div>

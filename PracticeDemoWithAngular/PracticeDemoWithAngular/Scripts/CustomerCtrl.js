@@ -32,12 +32,20 @@ function customerController($scope, $http) {
     //Insert Customer
     $scope.add = function () {
         $scope.loading = true;
-        $http.post('/api/Customer/', this.newcustomer).success(function (data) {
+        
+        $http.post('/api/Customer/Post123', this.newcustomer)
+            .success(function (data) {
+
+                /*
+                For custom validation we can use the following link
+                http://www.dotnettricks.com/learn/angularjs/angularjs-form-validation-with-bootstrap
+                */
+
             alert("Added Successfully!!");
             $scope.addMode = false;
             $scope.customers.push(data);
             $scope.loading = false;
-        }).error(function (data) {
+        }).error(function (data) {            
             $scope.error = "An Error has occured while Adding Customer! " + data;
             $scope.loading = false;
         });

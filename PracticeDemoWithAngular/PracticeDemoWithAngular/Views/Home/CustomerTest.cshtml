@@ -15,15 +15,18 @@
     <br />
 
     <div data-ng-controller="customerController" class="container">
-        @*<div class="row">
+        <div class="row">
                 <div class="col-md-12">
                     <strong class="error">{{ error }}</strong>
                     <p data-ng-hide="addMode"><a data-ng-click="toggleAdd()" href="javascript:;" class="btn btn-primary">Add New</a></p>
                     <form name="addCustomer" data-ng-show="addMode" style="width:600px;margin:0px auto;">
                         <div class="form-group">
                             <label for="cid" class="col-sm-2 control-label">ID:</label>
-                            <div class="col-sm-10">
-                                <input type="text" class="form-control" id="cid" placeholder="please enter id" data-ng-model="newcustomer.Id" required />
+                            <div class="col-sm-10">                                
+                                <input  type="text" class="form-control" id="cid" placeholder="please enter id" data-ng-model="newcustomer.Id" 
+                                       validator = "'!(newcustomer.Id)'"
+        invalid-message = "'This field is required'"
+                                       required />
                             </div>
                         </div>
                         <div class="form-group">
@@ -35,7 +38,7 @@
                         <div class="form-group">
                             <label for="address" class="col-sm-2 control-label">Address:</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="address" placeholder="please enter your address" data-ng-model="newcustomer.Address" required />
+                                <input data-ng-required="This field is required" type="text" class="form-control" id="address" placeholder="please enter your address" data-ng-model="newcustomer.Address" required />
                             </div>
                         </div>
                         <div class="form-group">
@@ -54,19 +57,21 @@
                             <label for="age" class="col-sm-2 control-label">Age:</label>
                             <div class="col-sm-10">
                                 <input type="text" class="form-control" id="age" placeholder="please enter your age" data-ng-model="newcustomer.Age" required />
+                                
                             </div>
                         </div>
                         <br />
                         <div class="form-group">
                             <div class="col-sm-offset-2 col-sm-10">
-                                <input type="submit" value="Add" data-ng-click="add()" data-ng-disabled="!addCustomer.$valid" class="btn btn-primary" />
+                                <input type="submit" value="Add" data-ng-click="add()" class="btn btn-primary" />
+                                @*<input type="submit" value="Add" data-ng-click="add()" data-ng-disabled="!addCustomer.$valid" class="btn btn-primary" />*@
                                 <input type="button" value="Cancel" data-ng-click="toggleAdd()" class="btn btn-primary" />
                             </div>
                         </div>
                         <br />
                     </form>
                 </div>
-            </div>*@
+            </div>
         <div class="row">
             <div class="col-md-12">
                 <br />
