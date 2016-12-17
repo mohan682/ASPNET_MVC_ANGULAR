@@ -1,0 +1,145 @@
+﻿<ListOfEntity xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="Data">
+  <Entity i:type="User">
+    <ID>1</ID>
+    <Type>User</Type>
+    <Properties>
+      <Property>
+        <Code>Firstname</Code>
+        <Value>Adam</Value>
+      </Property>
+      <Property>
+        <Code>Surname</Code>
+        <Value>Smith</Value>
+      </Property>
+    </Properties>
+    <Role>
+      <ID>1</ID>
+      <Type>Role</Type>
+      <Properties />
+    </Role>
+  </Entity>
+  <Entity i:type="User">
+    <ID>2</ID>
+    <Type>User</Type>
+    <Properties>
+      <Property>
+        <Code>Firstname</Code>
+        <Value>Robert</Value>
+      </Property>
+      <Property>
+        <Code>Surname</Code>
+        <Value>Ziya</Value>
+      </Property>
+    </Properties>
+    <Role>
+      <ID>2</ID>
+      <Type>Role</Type>
+      <Properties />
+    </Role>
+  </Entity>
+  <Entity i:type="User">
+    <ID>6</ID>
+    <Type>User</Type>
+    <Properties>
+      <Property>
+        <Code>Firstname</Code>
+        <Value>Michel</Value>
+      </Property>
+      <Property>
+        <Code>Surname</Code>
+        <Value>Augustijn</Value>
+      </Property>
+    </Properties>
+    <Role>
+      <ID>6</ID>
+      <Type>Role</Type>
+      <Properties />
+    </Role>
+  </Entity>
+  <Entity i:type="User">
+    <ID>7</ID>
+    <Type>User</Type>
+    <Properties>
+      <Property>
+        <Code>Firstname</Code>
+        <Value>John</Value>
+      </Property>
+      <Property>
+        <Code>Surname</Code>
+        <Value>Nikolas</Value>
+      </Property>
+    </Properties>
+    <Role>
+      <ID>7</ID>
+      <Type>Role</Type>
+      <Properties />
+    </Role>
+  </Entity>
+  <Entity i:type="User">
+    <ID>9</ID>
+    <Type>User</Type>
+    <Properties>
+      <Property>
+        <Code>Firstname</Code>
+        <Value>Adam</Value>
+      </Property>
+      <Property>
+        <Code>Surname</Code>
+        <Value>Robert</Value>
+      </Property>
+    </Properties>
+    <Role>
+      <ID>9</ID>
+      <Type>Role</Type>
+      <Properties />
+    </Role>
+  </Entity>
+  <Entity i:type="User">
+    <ID>6</ID>
+    <Type>User</Type>
+    <Properties>
+      <Property>
+        <Code>Firstname</Code>
+        <Value>Sean</Value>
+      </Property>
+      <Property>
+        <Code>Surname</Code>
+        <Value>Niklas</Value>
+      </Property>
+    </Properties>
+    <Role>
+      <ID>6</ID>
+      <Type>Role</Type>
+      <Properties>
+        <Property>
+          <Code>RoleName</Code>
+          <Value>User</Value>
+        </Property>
+      </Properties>
+    </Role>
+  </Entity>
+  <Entity i:type="User">
+    <ID>7</ID>
+    <Type>User</Type>
+    <Properties>
+      <Property>
+        <Code>Firstname</Code>
+        <Value>Normand</Value>
+      </Property>
+      <Property>
+        <Code>Surname</Code>
+        <Value>Grant</Value>
+      </Property>
+    </Properties>
+    <Role>
+      <ID>7</ID>
+      <Type>Role</Type>
+      <Properties>
+        <Property>
+          <Code>RoleName</Code>
+          <Value>User</Value>
+        </Property>
+      </Properties>
+    </Role>
+  </Entity>
+</ListOfEntity>

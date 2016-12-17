@@ -1,0 +1,15 @@
+C:\Git\PracticeProjects\interactionrecruitment\CreateUserManagementView\UserManagement\bin\Debug\UserManagement.exe.config
+C:\Git\PracticeProjects\interactionrecruitment\CreateUserManagementView\UserManagement\bin\Debug\Database\ListOfEntity.xml
+C:\Git\PracticeProjects\interactionrecruitment\CreateUserManagementView\UserManagement\bin\Debug\UserManagement.exe
+C:\Git\PracticeProjects\interactionrecruitment\CreateUserManagementView\UserManagement\bin\Debug\UserManagement.pdb
+C:\Git\PracticeProjects\interactionrecruitment\CreateUserManagementView\UserManagement\obj\Debug\UserManagement.csprojResolveAssemblyReference.cache
+C:\Git\PracticeProjects\interactionrecruitment\CreateUserManagementView\UserManagement\obj\Debug\MainWindow.baml
+C:\Git\PracticeProjects\interactionrecruitment\CreateUserManagementView\UserManagement\obj\Debug\MainWindow.g.cs
+C:\Git\PracticeProjects\interactionrecruitment\CreateUserManagementView\UserManagement\obj\Debug\App.g.cs
+C:\Git\PracticeProjects\interactionrecruitment\CreateUserManagementView\UserManagement\obj\Debug\UserManagement_Content.g.cs
+C:\Git\PracticeProjects\interactionrecruitment\CreateUserManagementView\UserManagement\obj\Debug\UserManagement_MarkupCompile.cache
+C:\Git\PracticeProjects\interactionrecruitment\CreateUserManagementView\UserManagement\obj\Debug\UserManagement.g.resources
+C:\Git\PracticeProjects\interactionrecruitment\CreateUserManagementView\UserManagement\obj\Debug\UserManagement.Properties.Resources.resources
+C:\Git\PracticeProjects\interactionrecruitment\CreateUserManagementView\UserManagement\obj\Debug\UserManagement.csproj.GenerateResource.Cache
+C:\Git\PracticeProjects\interactionrecruitment\CreateUserManagementView\UserManagement\obj\Debug\UserManagement.exe
+C:\Git\PracticeProjects\interactionrecruitment\CreateUserManagementView\UserManagement\obj\Debug\UserManagement.pdb
