@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html ng-app="weatherApp">
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link href="Content/Site.css" rel="stylesheet" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+
+    <script src="Scripts/jquery-3.1.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular.js"></script>    
+    <script src="Scripts/angular-route.min.js"></script>
+
+    <script src="Scripts/Controllers/weatherController.js"></script>
+    <script src="Scripts/Services/weatherDataFactory.js"></script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="/">Weather Forecast</a>
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid body-content">
+        <div class="jumbotron" ng-controller="weatherController">                    
+
+            <div class="large-12 columns">
+                <form>
+                    <div class="large-10 columns" style="margin:10px">
+                        <input type="text" ng-model="city" placeholder="Enter your city here" /> 
+                    </div>
+                    <div class="large-2 columns"  style="margin:10px">
+                        <button class="button postfix" ng-click="searchCurrentWeatherByCity(city)">
+                            <i class="fa fa-search-plus"></i> Search
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="large-12 columns" ng-show="!IsDataAvailable && !ErroredInService ">
+                No data available
+            </div>
+
+            <div class="large-12 columns" ng-show="ErroredInService" style="font-weight:bold;color:red">
+               Some error occured in the service,please try again.
+            </div>
+
+                <div class="table-responsive" ng-show="IsDataAvailable">
+                    <table class="table table-striped table-bordered" style="max-height:700px">
+                        <thead>
+                            <tr>
+                                <th>Date Time</th>
+                                <th>Temp</th>
+                                <th>Min Temp</th>
+                                <th>Max Temp</th>
+                                <th>Weather</th>
+                                <th>Weather Forecast</th>
+                            </tr>
+                        </thead>
+                        <tbody ng-repeat="w in weatherData.summary">
+                            <tr>
+                                <td>{{w.dt_txt}}</td>
+                                <td>{{w.main.temp}}</td>
+                                <td>{{w.main.temp_min}}</td>
+                                <td>{{w.main.temp_max}}</td>
+                                <td>{{w.weather[0].main}}</td>
+                                <td><img src='{{getImage(w.weather[0].icon)}}' /> </td>          
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+    </div>
+    <footer class="navbar-fixed-bottom">
+        <p>© 2017 - Bank Of America Assignment</p>
+    </footer>
+   
+</body>
+
+</html>
+
+
+
+
